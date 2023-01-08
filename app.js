@@ -48,7 +48,7 @@ calcBtn.forEach((button) => {
     switch (button.textContent) {
       case "=":
         tempCalc.push(Number(numbers.join("")));
-        for (i = 0; i < tempCalc.length; i++) {
+        for (let i = 0; i < tempCalc.length; i++) {
           tempFunction.push(tempCalc[i], operators[i]);
         }
         tempFunction.pop();
